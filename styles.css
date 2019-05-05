@@ -45,10 +45,15 @@ li {
     height: 90px;
     width: 267px;
 }
-input{
+
+input {
     border: 1px solid rgb(218, 218, 218);
     height: 46px;
     width: 550px;
+}
+
+input:hover {
+    filter: drop-shadow(0 0 0.50rem rgb(194, 194, 194));
 }
 
 .search {
@@ -79,23 +84,78 @@ button {
     font-size: 15px;
 }
 
+button:hover {
+    border: rgb(207, 207, 207) solid;
+    color: black;
+    border-width: 0.5px;
+    cursor: pointer;
+}
+
+.footer1, .footer2, .footer3 {
+    background-color: rgb(236, 236, 236);
+    height: 40px;
+    font-size: 16px;
+    color: rgb(88, 88, 88);
+    position: fixed;
+    border-top: rgb(221, 221, 221) solid;
+}
+
 .footer1 {
     display: flex;
     justify-content: left;
     margin-top: 70px;
-    background-color: rgb(236, 236, 236);
-    height: 40px;
-    font-size: 16px;
-    color: rgb(88, 88, 88);
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    border-width: 1px;
+    text-indent: 20px;
 }
 
 .footer2 {
+    display: flex;
+    justify-content: flex-start;
     margin-left: 0;
     padding: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    border-width: 1px;
+}
+
+.footer3 {
     display: flex;
-    justify-content: left;
-    background-color: rgb(236, 236, 236);
-    height: 40px;
-    font-size: 16px;
-    color: rgb(88, 88, 88);
+    justify-content: flex-end;
+    margin-left: 50%;
+    padding: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    border-width: 1px;
+}
+
+p {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+#pleft {
+    margin-left: 20px;
+}
+
+#pright {
+    margin-right: 20px;
+}
+
+.lang {
+    font-size: 13px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+a {
+    margin: 3px;
+    color: #1a0dab; 
 }
